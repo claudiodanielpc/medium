@@ -122,4 +122,4 @@ fig.add_annotation(text="Fuente: @claudiodanielpc con información del Instituto
 
 #Salvar la tabla como PNG
 
-pio.write_image(fig, "tabla.png",width=2000, height=400)
+pio.write_image(fig, "tabla.png",scale=1, width=2000, height=400)
