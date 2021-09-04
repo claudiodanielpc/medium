@@ -10,7 +10,7 @@ from folium import plugins
 
 #url con token
 #Ejemplo: todas las unidades económicas de Morelos
-url = "https://www.inegi.org.mx/app/api/denue/v1/consulta/BuscarEntidad/todos/17/1/100000000/a004f0de-f1d3-0adf-1bfb-81bac98fa7b5"
+url = "https://www.inegi.org.mx/app/api/denue/v1/consulta/BuscarEntidad/todos/17/1/100000000/AQUÍ_VA_TU_TOKEN"
 
 #Respuesta de la consulta a la API  
 respuesta = requests.get(url).json()
