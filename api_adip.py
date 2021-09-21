@@ -61,8 +61,8 @@ fig.update_layout(
 
 
 ###Credenciales para subir gráfica generada a cuenta de Chart Studio
-username = 'claudiodaniel' # Tu usuario
-api_key = 'uWjjTHdTEyYiy1LjKGuq' # API Key
+username = 'tu_usuario' # Tu usuario
+api_key = 'tu_llave' # API Key
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 
 #Salvar y mostrar
