@@ -10,7 +10,7 @@ pacman::p_load(tidyverse, httr, jsonlite, plotly)
 
 #URl con API KEY
 
-key="a004f0de-f1d3-0adf-1bfb-81bac98fa7b5"
+key="tu_llave"
 url = paste0("https://www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/1003000001/es/0700/false/BISE/2.0/",
              key,"?type=json")
 
@@ -69,8 +69,8 @@ grafi<-ggplotly(g1,width = 900, height = 500)%>%
 
 
 ###Credenciales para subir gráfica generada a cuenta de Chart Studio
-Sys.setenv("plotly_username"="claudiodaniel")
-Sys.setenv("plotly_api_key"="uWjjTHdTEyYiy1LjKGuq")
+Sys.setenv("plotly_username"="tu_usuario_chartstudio")
+Sys.setenv("plotly_api_key"="tu_llave_chartstudio")
 #Guardar en cuenta de Chart Studio
 api_create(grafi, "vivparhab",
            fileopt = "overwrite"
