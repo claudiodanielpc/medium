@@ -28,17 +28,11 @@ banxico.dtypes
 
 
 # %%
-banxico.sort_values(by='fecha')
-banxico
-
-
-# %%
 #Cambiar variable de fecha a datetime
 banxico['fecha'] = pd.to_datetime(banxico['fecha'],format="%d/%m/%Y")
 #Cambiar dato a float
 banxico["dato"] = pd.to_numeric(banxico["dato"])
-#Checar nuevamente el tipo de las variables
-banxico.dtypes
+
 banxico
 
 
@@ -50,7 +44,7 @@ fig=go.Figure([go.Scatter(x=banxico["fecha"], y=banxico["dato"],
 line=dict(color="#285c4d",width=3)
 )])
 
-# Set title
+# Poner título
 fig.update_layout(
     title_text="<b>Tipo de cambio diario. Fecha de determinación (FIX)</b><br><i>(Pesos por dólar)</i>"
 )
@@ -99,8 +93,8 @@ fig.show()
 
 # %%
 ###Credenciales para subir gráfica generada a cuenta de Chart Studio
-username = 'claudiodaniel' # Tu usuario
-api_key = 'uWjjTHdTEyYiy1LjKGuq' # API Key
+username = 'tu_usuario' # Tu usuario
+api_key = 'tu_llave' # API Key
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 
 #Salvar y mostrar
