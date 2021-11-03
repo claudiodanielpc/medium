@@ -9,7 +9,7 @@ import chart_studio
 
 
 # %%
-url = "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos/?token=d0c0b0835c921f1cadab8325eb04bdfdc3f945f875ac6d9132d616b1d83c142c"
+url = "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos/?token=TU_TOKEN"
 respuesta = requests.get(url).json()
 respuesta
 
