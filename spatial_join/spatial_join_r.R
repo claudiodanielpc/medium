@@ -7,9 +7,7 @@ rm(list=ls())
 
 #Directorio de trabajo
 #Esto se debe de cambiar en cada computadora
-#Crear carpeta general de trabajo en unidad D
-dir.create("D:/adip/filtro", showWarnings = F)
-setwd("D:/adip/filtro")
+setwd("D:/")
 
 
 # Librerías ====
